@@ -1,0 +1,25 @@
+
+config CUSTOM_MYAPP
+	tristate "TUANND temperature sensor example"
+	default n
+	---help---
+		Enable the TUANND example
+
+if CUSTOM_MYAPP
+
+config CUSTOM_MYAPP_PROGNAME
+	string "Program name"
+	default "tuanne"
+	---help---
+		This is the name of the program that will be used when the NSH ELF
+		program is installed.
+
+config CUSTOM_MYAPP_PRIORITY
+	int "TUANND309 task priority"
+	default 100
+
+config CUSTOM_MYAPP_STACKSIZE
+	int "TUANND309 stack size"
+	default DEFAULT_TASK_STACKSIZE
+
+endif

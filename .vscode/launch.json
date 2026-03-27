@@ -1,0 +1,39 @@
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "stlink (micoair_h743)",
+            "gdbPath": "/usr/bin/arm-none-eabi-gdb",
+            "device": "STM32H743VI",
+            "svdFile": "",
+            "executable": "/home/tuannd/Project/nuttxspace/nuttx/nuttx",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "configFiles": ["/home/tuannd/Project/nuttxspace/openocd_H7.cfg"],
+
+        }
+    ]
+}
+/*
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "stlink (stm32f103c8t6)",
+            "gdbPath": "/usr/bin/arm-none-eabi-gdb",
+            "device": "STM32F103C8",
+            "svdFile": "",
+            "executable": "/home/tuannd/Project/nuttxspace/nuttx/nuttx",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32f1x.cfg"
+            ]
+        }
+    ]
+}
+*/

@@ -1,0 +1,4 @@
+
+ifneq ($(CONFIG_CUSTOM_MYAPP),)
+CONFIGURED_APPS += $(APPDIR)/../myapp
+endif
